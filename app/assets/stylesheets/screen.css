@@ -112,7 +112,7 @@ html, body {
 .photo2 {
   height: 400px;
   width: 400px;
-  background-image: image-url("turtle_02.jpg");
+  background-image: url(<%= asset_path 'turtle_02.jpg' %>);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -125,9 +125,9 @@ html, body {
   height: 400px;
   width: 400px;
   background-image: image-url("turtle_03.jpg");
-  /*background-position: center center;
+  background-position: center center;
   background-repeat: no-repeat;
-  background-size: cover;*/
+  background-size: cover;
   margin: 20px;
   float: left;
 }
