@@ -100,7 +100,7 @@ html, body {
 .photo1 {
   height: 400px;
   width: 400px;
-  background-image: image-url("turtle_01.jpg");
+  background-image: url("turtle_01.jpg");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -112,7 +112,7 @@ html, body {
 .photo2 {
   height: 400px;
   width: 400px;
-  background-image: image-url("turtle_02.jpg");
+  background-image: url("turtle_02.jpg");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -124,10 +124,10 @@ html, body {
 .photo3 {
   height: 400px;
   width: 400px;
-  background-image: image-url("turtle_03.jpg");
-  /*background-position: center center;
+  background-image: url("turtle_03.jpg");
+  background-position: center center;
   background-repeat: no-repeat;
-  background-size: cover;*/
+  background-size: cover;
   margin: 20px;
   float: left;
 }
@@ -136,7 +136,7 @@ html, body {
 .photo4 {
   height: 400px;
   width: 400px;
-  background-image: image-url("turtle_04.jpg");
+  background-image: url("turtle_04.jpg");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
