@@ -1,0 +1,25 @@
+<h1>Listing turtles</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @turtles.each do |turtle| %>
+      <tr>
+        <td><%= link_to 'Show', turtle %></td>
+        <td><%= link_to 'Edit', edit_turtle_path(turtle) %></td>
+        <td><%= link_to 'Destroy', turtle, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Turtle', new_turtle_path %>

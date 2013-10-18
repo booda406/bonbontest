@@ -1,0 +1,17 @@
+<%= form_for(@turtle) do |f| %>
+  <% if @turtle.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@turtle.errors.count, "error") %> prohibited this turtle from being saved:</h2>
+
+      <ul>
+      <% @turtle.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
