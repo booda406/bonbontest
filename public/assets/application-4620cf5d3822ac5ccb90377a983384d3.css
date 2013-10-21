@@ -1,8 +1,80 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the top of the
+ * compiled file, but it's generally better to create a new file per style scope.
+ *
+
+
+ */
+
+/* Welcome to Compass. Use this file to write IE specific override styles.
+ * Import this file using the following HTML or equivalent:
+ * <!--[if IE]>
+ *   <link href="/stylesheets/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
+ * <![endif]--> */
+
+/* Welcome to Compass. Use this file to define print styles.
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/print.css" media="print" rel="stylesheet" type="text/css" /> */
+
+body {
+  background-color: #fff;
+  color: #333;
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 18px; }
+
+p, ol, ul, td {
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 18px; }
+
+pre {
+  background-color: #eee;
+  padding: 10px;
+  font-size: 11px; }
+
+div.field, div.actions {
+  margin-bottom: 10px; }
+
+#notice {
+  color: green; }
+
+.field_with_errors {
+  padding: 2px;
+  background-color: red;
+  display: table; }
+
+#error_explanation {
+  width: 450px;
+  border: 2px solid red;
+  padding: 7px;
+  padding-bottom: 0;
+  margin-bottom: 20px;
+  background-color: #f0f0f0; }
+  #error_explanation h2 {
+    text-align: left;
+    font-weight: bold;
+    padding: 5px 5px 5px 15px;
+    font-size: 12px;
+    margin: -7px;
+    margin-bottom: 0px;
+    background-color: #c00;
+    color: #fff; }
+  #error_explanation ul li {
+    font-size: 12px;
+    list-style: square; }
 /* Welcome to Compass.
  * In this file you should write your main styles. (or centralize your imports)
  * Import this file using the following HTML or equivalent:
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
 /* line 17, ../../../../../Applications/compass.app/Contents/Resources/lib/ruby/compass_0.12/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -22,6 +94,11 @@ time, mark, audio, video {
   font: inherit;
   font-size: 100%;
   vertical-align: baseline;
+}
+
+/* line 22, ../../../../../Applications/compass.app/Contents/Resources/lib/ruby/compass_0.12/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
 }
 
 /* line 24, ../../../../../Applications/compass.app/Contents/Resources/lib/ruby/compass_0.12/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
@@ -48,6 +125,7 @@ q, blockquote {
 }
 /* line 103, ../../../../../Applications/compass.app/Contents/Resources/lib/ruby/compass_0.12/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
   content: none;
 }
 
@@ -66,74 +144,28 @@ html, body {
   margin: 0;
   padding: 0;
   height: 100%;
-  min-height: 100%;
-  background-color:rgba(0, 25, 9 ,1 );
   font-family: "Lantinghei SC","Microsoft JhengHei","HelveticaNeue-Medium", "Helvetica Neue Medium", "Helvetica Neue", sans-serif;
 }
 
 /* line 15, ../sass/screen.scss */
-
-
 .wrapper {
   width: 960px;
   min-width: 960px;
-  height: auto;
-  min-height: 100%;
-  background-color: white;
-  margin: 0 auto -35px auto;
-  
-}
-
-.banner{
-  width: 940px;
-  height: 30px;
-  background-color: rgba(163, 163, 163, 0.8);
+  height: 1800px;
+  background-color: rgba(153, 153, 153, 0.2);
+  margin: 0 auto;
   padding: 10px;
-
 }
-
 
 /* line 25, ../sass/screen.scss */
 .description {
-  width: 940px;
-  height: auto;
-  margin: 10px auto;
-  padding: 0;
+  width: 600px;
+  margin: 0 60px;
 }
 
-h1{
-  font-size: 20pt;
-  line-height: 1.2;
-
-}
-
-h2{
-  font-size: 16pt;
-  line-height: 1.2;
-
-}
-
-h3{
-  font-size: 16pt;
-  text-align: center;
-  margin-top:30px; 
-}
-
-p{
-  font-size: 14pt;
-  line-height: 1.2;
-
-
-}
 /* line 30, ../sass/screen.scss */
 .photo {
-  height: 1380px;
-  width: 890px;
-  margin: 30px auto;
-  padding-top:20px;
-  padding-bottom: 20px; 
-  padding-left:60px; 
-  box-shadow: 0px -5px 5px rgba(20%,20%,40%,0.1), 0px 5px 5px rgba(20%,20%,40%,0.1);
+  height: 880px;
 }
 
 /* line 34, ../sass/screen.scss */
@@ -144,19 +176,19 @@ p{
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
-  margin: 10px;
+  margin: 20px;
   float: left;
 }
 
 /* line 45, ../sass/screen.scss */
 .photo2 {
-   height: 400px;
+  height: 400px;
   width: 400px;
-  background-image: url("/assets/turtle_02.jpg");
+  background-image: url("turtle_02.jpg");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
-  margin: 10px;
+  margin: 20px;
   float: left;
 }
 
@@ -164,11 +196,11 @@ p{
 .photo3 {
   height: 400px;
   width: 400px;
-  background-image: url("/assets/turtle_03.jpg");
+  background-image: url("turtle_03.jpg");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
-  margin:10px; 
+  margin: 20px;
   float: left;
 }
 
@@ -176,68 +208,43 @@ p{
 .photo4 {
   height: 400px;
   width: 400px;
-
-  background-image: url("/assets/turtle_04.jpg");
-
+  background-image: url("turtle_04.JPG");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
-  margin: 10px;
+  margin: 20px;
   float: left;
-}
-
-.video{
-  width:820px;
-  height:540px;
-  margin-left:10px;
 }
 
 /* line 78, ../sass/screen.scss */
 .share {
   width: 400px;
-  height: 100px;
-  padding-top: 30px;
+  height: 60px;
   margin: 0 auto;
   text-align: center;
 }
 
 /* line 85, ../sass/screen.scss */
 a:link {
-  /*color: white;*/
+  color: white;
   font-size: 22px;
   padding: 10px;
-  background-color: rgba(0, 203, 153, 0.9);
+  background-color: rgba(52, 203, 153, 0.9);
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   border-radius: 5px;
   margin: 0 auto;
   text-decoration: none;
-  box-shadow: 0px -2px 1px rgba(20%,20%,40%,0.5) inset;
-
 }
-
 
 /* line 97, ../sass/screen.scss */
 a:hover {
   font-size: 22px;
   padding: 10px;
-  background-color: rgba(52, 203, 153, 1);
+  background-color: rgba(52, 203, 153, 0.4);
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   border-radius: 5px;
   margin: 0 auto;
-  transition: 0.8s;
-  text-shadow: 2px 2px rgba(20%,20%,40%,0.1);
-  box-shadow: 0px -2px 1px rgba(20%,20%,40%,0.5) ;
-}
-
-.footer{
-  height: 20px;
-  width: 960px;
-  padding-top: 10px;
-  padding-bottom: 5px;
-  margin: 0 auto;
-  text-align: center;
-  background-color: rgba(163, 163, 163, 0.8);
-
+  transition: 0.3s;
 }
