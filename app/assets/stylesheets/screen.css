@@ -24,11 +24,6 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
-/* line 22, ../../../../../Applications/compass.app/Contents/Resources/lib/ruby/compass_0.12/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
-html {
-  line-height: 1;
-}
-
 /* line 24, ../../../../../Applications/compass.app/Contents/Resources/lib/ruby/compass_0.12/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 ol, ul {
   list-style: none;
@@ -53,7 +48,6 @@ q, blockquote {
 }
 /* line 103, ../../../../../Applications/compass.app/Contents/Resources/lib/ruby/compass_0.12/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 q:before, q:after, blockquote:before, blockquote:after {
-  content: "";
   content: none;
 }
 
@@ -72,51 +66,97 @@ html, body {
   margin: 0;
   padding: 0;
   height: 100%;
+  min-height: 100%;
+  background-color:rgba(0, 25, 9 ,1 );
   font-family: "Lantinghei SC","Microsoft JhengHei","HelveticaNeue-Medium", "Helvetica Neue Medium", "Helvetica Neue", sans-serif;
 }
 
 /* line 15, ../sass/screen.scss */
+
+
 .wrapper {
   width: 960px;
   min-width: 960px;
-  height: 1800px;
-  background-color: rgba(153, 153, 153, 0.2);
-  margin: 0 auto;
-  padding: 10px;
+  height: auto;
+  min-height: 100%;
+  background-color: white;
+  margin: 0 auto -35px auto;
+  
 }
+
+.banner{
+  width: 940px;
+  height: 30px;
+  background-color: rgba(163, 163, 163, 0.8);
+  padding: 10px;
+
+}
+
 
 /* line 25, ../sass/screen.scss */
 .description {
-  width: 600px;
-  margin: 0 60px;
+  width: 940px;
+  height: auto;
+  margin: 10px auto;
+  padding: 0;
 }
 
+h1{
+  font-size: 20pt;
+  line-height: 1.2;
+
+}
+
+h2{
+  font-size: 16pt;
+  line-height: 1.2;
+
+}
+
+h3{
+  font-size: 16pt;
+  text-align: center;
+  margin-top:30px; 
+}
+
+p{
+  font-size: 14pt;
+  line-height: 1.2;
+
+
+}
 /* line 30, ../sass/screen.scss */
 .photo {
-  height: 880px;
+  height: 1380px;
+  width: 890px;
+  margin: 30px auto;
+  padding-top:20px;
+  padding-bottom: 20px; 
+  padding-left:60px; 
+  box-shadow: 0px -5px 5px rgba(20%,20%,40%,0.1), 0px 5px 5px rgba(20%,20%,40%,0.1);
 }
 
 /* line 34, ../sass/screen.scss */
 .photo1 {
   height: 400px;
   width: 400px;
-  background-image: url("turtle_01.jpg");
+  background-image: url("/assets/turtle_01.jpg");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
-  margin: 20px;
+  margin: 10px;
   float: left;
 }
 
 /* line 45, ../sass/screen.scss */
 .photo2 {
-  height: 400px;
+   height: 400px;
   width: 400px;
-  background-image: url("turtle_02.jpg");
+  background-image: url("/assets/turtle_02.jpg");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
-  margin: 20px;
+  margin: 10px;
   float: left;
 }
 
@@ -124,11 +164,11 @@ html, body {
 .photo3 {
   height: 400px;
   width: 400px;
-  background-image: url("turtle_03.jpg");
+  background-image: url("/assets/turtle_03.jpg");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
-  margin: 20px;
+  margin:10px; 
   float: left;
 }
 
@@ -136,43 +176,66 @@ html, body {
 .photo4 {
   height: 400px;
   width: 400px;
-  background-image: url("turtle_04.jpg");
+  background-image: url("/assets/turtle_04.jpg");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
-  margin: 20px;
+  margin: 10px;
   float: left;
+}
+
+.video{
+  width:820px;
+  height:540px;
+  margin-left:10px;
 }
 
 /* line 78, ../sass/screen.scss */
 .share {
   width: 400px;
-  height: 60px;
+  height: 100px;
+  padding-top: 30px;
   margin: 0 auto;
   text-align: center;
 }
 
 /* line 85, ../sass/screen.scss */
 a:link {
-  color: white;
+  /*color: white;*/
   font-size: 22px;
   padding: 10px;
-  background-color: rgba(52, 203, 153, 0.9);
+  background-color: rgba(0, 203, 153, 0.9);
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   border-radius: 5px;
   margin: 0 auto;
   text-decoration: none;
+  box-shadow: 0px -2px 1px rgba(20%,20%,40%,0.5) inset;
+
 }
+
 
 /* line 97, ../sass/screen.scss */
 a:hover {
   font-size: 22px;
   padding: 10px;
-  background-color: rgba(52, 203, 153, 0.4);
+  background-color: rgba(52, 203, 153, 1);
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   border-radius: 5px;
   margin: 0 auto;
-  transition: 0.3s;
+  transition: 0.8s;
+  text-shadow: 2px 2px rgba(20%,20%,40%,0.1);
+  box-shadow: 0px -2px 1px rgba(20%,20%,40%,0.5) ;
+}
+
+.footer{
+  height: 20px;
+  width: 960px;
+  padding-top: 10px;
+  padding-bottom: 5px;
+  margin: 0 auto;
+  text-align: center;
+  background-color: rgba(163, 163, 163, 0.8);
+
 }
