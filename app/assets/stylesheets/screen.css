@@ -226,44 +226,6 @@ p{
   margin: 10px 5% 10px 5%;
 }
 
-/* line 45, ../sass/screen.scss */
-.photo2 {
-  height: 400px;
-  width: 90%;
-  background-image: url("/assets/turtle_02.jpg");
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  margin: 10px auto;
-}
-
-/* line 56, ../sass/screen.scss */
-.photo3 {
-  height: 400px;
-  width: 90%;
-  background-image: url("/assets/turtle_03.jpg");
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  margin: 10px auto;
-}
-
-/* line 67, ../sass/screen.scss */
-.photo4 {
-  height: 400px;
-  width: 90%;
-  background-image: url("/assets/turtle_04.jpg");
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  margin: 10px auto;
-}
-
-.video{
-  width:820px;
-  height:540px;
-  margin-left:10px;
-}
 
 /* line 78, ../sass/screen.scss */
 .share {
