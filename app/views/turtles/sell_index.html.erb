@@ -14,23 +14,24 @@
 </script>
 </head>
 <body>
+	<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/zh_TW/all.js#xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
 	<div class="wrapper">
 		<div class="banner">
-			<div class="user">
-					<img src="/assets/face.jpg" class="face">
-				
-				<div class="user_info">
-					<h2>Robert</h2>
-					<p>Location:台北 Taipei</p>
-				</div>
-			</div>
+			
 			<div class="right"><h1>icelorc的龜龜日記</h1></div>
 		</div>
 		<div class="space_holder">
 		<div class="description">
 			<h2>龜龜品種：蘇卡達陸龜
 			</h2>
-			<h2>龜名：蘇卡達陸龜
+			<h2>龜名：菠蘿
 			</h2>
 			<h2>龜重：122 g
 			</h2>
@@ -48,7 +49,18 @@
 		</div>
 	</div>
 	<div class="footer">
-		Tortoise Diary
+		<div class="user_box">
+		<div class="user">
+					<img src="/assets/face.jpg" class="face">
+				<div class="user_info">
+					<h2>Robert</h2>
+					<p>icelorc@gmail.com</p>
+					<p>台北 Taipei</p>
+					<p>#蘇卡達 ＃紅腿 ＃豹龜</p>
+				</div>
+		</div>
+		<div class="fb-like social" data-href="https://loveturtle.herokuapp.com/" data-width="100px" data-height="30px" data-colorscheme="light" data-layout="button_count" data-action="like" data-show-faces="true" data-send="false"></div>
+		</div>
 	</div>
 
 

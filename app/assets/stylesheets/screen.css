@@ -79,10 +79,11 @@ html, body {
   max-width: 1024px;
   min-width: 640px;
   height: auto;
-  margin:0 3% 0 3%;
+  margin:0 1.5% 0 1.5%;
   min-height: 100%;
   background-color: white;
-  margin: 0 auto -30px auto;
+  padding-bottom: 130px;
+  margin: 0 auto -130px auto;
   background-color:rgba(0, 25, 9 ,1 );
 
   
@@ -104,50 +105,9 @@ html, body {
 
 }
 
-.user{
-  width: 240px;
-  height: 58px;
-  padding: 10px;
-  line-height: 1;
-  margin-left: 5%;
-  margin-top: 40px;
-  float: left;
-  background-color: rgba(163, 163, 163, 0.5);
-  -webkit-border-radius: 7px;
-  -moz-border-radius: 7px;
-  border-radius: 7px;
-}
-
-.face {
-  width: 60px;
-  height:60px
-  display: inline-table;
-  border-radius: 100%;
-  vertical-align: middle;
-  margin-right: 10px;
-}
 
 
-.user_info{
-  width: auto;
-  height: auto;
-  display: inline-table;
-  vertical-align: middle;
-
-}
-.user_info h2{
-  font-size:20px;
-  text-align: left;
-  color: white;
-}
-.user_info p{
-  font-size:16px;
-  text-align: left;
-  color: white;
-
-}
-
-.banner .right{
+.right{
   display: block;
   float: right;
   margin-top: 30px;
@@ -272,12 +232,67 @@ a:hover {
 }
 
 .footer{
-  height: 20px;
+  height: 120px;
   width: 100%;
   padding-top: 10px;
   margin: 0 auto;
   text-align: center;
   bottom: 0px;
   color: rgba(163, 163, 163, 0.7);
+  background-color: rgba(163, 163, 163, 0.6);
 
+}
+
+
+.user_box{
+  width: 97%;
+  max-width: 1024px;
+  height: 100px;
+  margin:0 auto;
+  line-height: 1;
+}
+
+.user{
+  width: 250px;
+  height: 100px;
+  line-height: 1;
+  margin-top: 10px;
+  float: left;/*
+  background-color: rgba(163, 163, 163, 0.5);*/
+/*  -webkit-border-radius: 7px;
+  -moz-border-radius: 7px;
+  border-radius: 7px;*/
+}
+
+.face {
+  width: 80px;
+  height:80px
+  display: inline-table;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+
+
+.user_info{
+  width: auto;
+  height: auto;
+  display: inline-table;
+  vertical-align: middle;
+
+}
+.user_info h2{
+  font-size:18px;
+  text-align: left;
+  color: white;
+}
+.user_info p{
+  font-size:14px;
+  text-align: left;
+  color: white;
+
+}
+
+.social{
+  float: right;
+  margin-top: 40px;
 }
