@@ -1,8 +1,33 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the top of the
+ * compiled file, but it's generally better to create a new file per style scope.
+ *
+
+
+ */
+
+/* Welcome to Compass. Use this file to write IE specific override styles.
+ * Import this file using the following HTML or equivalent:
+ * <!--[if IE]>
+ *   <link href="/stylesheets/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
+ * <![endif]--> */
+
+/* Welcome to Compass. Use this file to define print styles.
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/print.css" media="print" rel="stylesheet" type="text/css" /> */
+
 /* Welcome to Compass.
  * In this file you should write your main styles. (or centralize your imports)
  * Import this file using the following HTML or equivalent:
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
 /* line 17, ../../../../../Applications/compass.app/Contents/Resources/lib/ruby/compass_0.12/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -145,25 +170,25 @@ html, body {
 }
 
 h1{
-  font-size: 1em;
+  font-size: 20pt;
   line-height: 1.2;
 
 }
 
 h2{
-  font-size: 1.2em;
+  font-size: 16pt;
   line-height: 1.2;
 
 }
 
-/*h3{
-  font-size: 1em;
+h3{
+  font-size: 16pt;
   text-align: center;
   margin-top:30px; 
-}*/
+}
 
 p{
-  font-size: 1em;
+  font-size: 14pt;
   line-height: 1.2;
 
 
@@ -203,7 +228,7 @@ a {
 /* line 85, ../sass/screen.scss */
 a:link {
   color: white;
-  font-size: 1.5em;
+  font-size: 22px;
   padding: 10px;
   background-color: rgba(46, 138, 138, 1);
   -webkit-border-radius: 5px;
@@ -219,7 +244,7 @@ a:link {
 /* line 97, ../sass/screen.scss */
 a:hover {
   color: white;
-  font-size: 1.5em;
+  font-size: 22px;
   padding: 10px;
   background-color: rgba(46, 138, 138, 0.8);
   -webkit-border-radius: 5px;
@@ -281,12 +306,12 @@ a:hover {
 
 }
 .user_info h2{
-  font-size:0.8em;
+  font-size:18px;
   text-align: left;
   color: white;
 }
 .user_info p{
-  font-size:0.8em;
+  font-size:14px;
   text-align: left;
   color: white;
 
