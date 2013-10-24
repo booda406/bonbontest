@@ -6,7 +6,7 @@ Bonbontest::Application.routes.draw do
 
   # You can have the root of your site routed with "root"
    root 'turtles#sell_index'
-   get 'sell_count' => 'turtles#sell_count'
+   get 'share_count' => 'turtles#sell_count'
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 
