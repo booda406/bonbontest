@@ -69,6 +69,26 @@ class TurtlesController < ApplicationController
     
   end
 
+  def share
+    
+  end
+
+  def animal
+    
+  end
+
+  def follow
+    
+  end
+
+  def first
+    
+  end
+
+  def about
+    
+  end
+
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_turtle
