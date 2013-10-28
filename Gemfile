@@ -36,7 +36,7 @@ group :doc do
 end
 
 group :development do
-  gem 'guard-livereload', require: false
+  gem 'guard-livereload'#, require: false
 end
 
 group :production do
