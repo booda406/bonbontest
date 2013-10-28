@@ -82,7 +82,7 @@ html, body {
   margin:0 1.5% 0 1.5%;
   min-height: 100%;
   background-color: white;
-  padding-bottom: 130px;
+  /*padding-bottom: 130px;*/
   margin: 0 auto -130px auto;
   background-color:rgba(0, 25, 9 ,1 );
 
@@ -125,8 +125,10 @@ html, body {
 .right h1{
   display: block;
   padding: 4px;
-   background-color: rgba(46, 138, 138, 0.7);
+  background-color: rgba(46, 138, 138, 0.7);
 }
+
+
 .space_holder{
   width: 100%;
   height: auto;
@@ -197,43 +199,71 @@ p{
   height: 100px;
   padding-top: 30px;
   margin: 0 auto;
+}
+
+.share_button {
+  width: 180px;
+  margin: 0 auto;
+  display: block;
   text-align: center;
 }
 
-.share a {
+.share_button a,
+.share_button a:link,
+.share_button a:hover {
   color: white;
-}
-
-/* line 85, ../sass/screen.scss */
-.share a:link {
-  color: white;
-  font-size: 1.5em;
-  padding: 10px;
-  background-color: rgba(46, 138, 138, 1);
+  font-size: 1.2em;
+  padding: 7px;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   border-radius: 5px;
   margin: 0 auto;
   text-decoration: none;
+}
+
+/* line 85, ../sass/screen.scss */
+.share_button a:link {
+  background-color: rgba(46, 138, 138, 1);
   box-shadow: 0px -2px 1px rgba(20%,20%,40%,0.5) inset;
 
 }
 
 
 /* line 97, ../sass/screen.scss */
-.share a:hover {
-  color: white;
-  font-size: 1.5em;
-  padding: 10px;
+.share_button a:hover {
   background-color: rgba(46, 138, 138, 0.8);
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  border-radius: 5px;
-  margin: 0 auto;
   transition: 0.3s;
   text-shadow: 2px 2px rgba(20%,20%,40%,0.1);
   box-shadow: 0px -2px 1px rgba(20%,20%,40%,0.5) ;
 }
+
+.previous{
+  float: left;
+  border-bottom: 1px dashed rgba(163, 163, 163, 0.5);
+}
+
+.previous a,
+.previous a:link,
+.previous a:hover {
+  float: left;
+  color: rgba(163, 163, 163, 0.5);
+  font-size: 0.8em;
+  margin: 0 auto;
+  text-decoration: none;
+}
+
+/* line 85, ../sass/screen.scss */
+.previous a:link {
+  color: rgb(163, 163, 163, 0.4);
+}
+
+
+/* line 97, ../sass/screen.scss */
+.previous a:hover {
+  transition: 0.3s;
+  text-shadow: 2px 2px rgba(20%,20%,40%,0.1);
+}
+
 
 .footer{
   height: 120px;
@@ -244,7 +274,6 @@ p{
   bottom: 0px;
   color: rgba(163, 163, 163, 0.7);
   background-color: rgba(163, 163, 163, 0.6);
-
 }
 
 
