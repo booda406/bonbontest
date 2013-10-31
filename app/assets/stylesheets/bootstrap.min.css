@@ -79,7 +79,7 @@ html, body {
   height: auto;
   min-height: 100%;
   background-color:rgba(0, 25, 9 ,1 );
-  font-family: "Lantinghei SC","Microsoft JhengHei","HelveticaNeue-Medium", "Helvetica Neue Medium", "Helvetica Neue", sans-serif;
+  font-family: "Microsoft JhengHei","HelveticaNeue-Medium", "Helvetica Neue Medium", "Helvetica Neue", sans-serif;
 }
 
 /* line 15, ../sass/screen.scss */
@@ -158,6 +158,7 @@ html, body {
 .description {
   width: 90%;
   height: auto;
+  min-height: 100%;
   margin: 0px auto 0px auto;
   padding-top: 20px;
   background-color: white;
