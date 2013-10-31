@@ -35,6 +35,8 @@ group :doc do
   gem 'sdoc', require: false
 end
 
+gem 'simple-form'
+
 group :development do
   gem 'guard-livereload'#, require: false
 end
