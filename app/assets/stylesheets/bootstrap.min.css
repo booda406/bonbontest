@@ -64,6 +64,7 @@ q:before, q:after, blockquote:before, blockquote:after {
 /* line 32, ../../../../../Applications/compass.app/Contents/Resources/lib/ruby/compass_0.12/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 a img {
   border: none;
+  width: 100%;
 }
 
 /* line 116, ../../../../../Applications/compass.app/Contents/Resources/lib/ruby/compass_0.12/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
@@ -370,5 +371,3 @@ p{
   background-color: rgba(153, 153, 153, 0.6);
   text-shadow: 2px 2px rgba(20%,20%,40%,0.1);
 }
-
-
