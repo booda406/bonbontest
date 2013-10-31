@@ -70,7 +70,7 @@ class TurtlesController < ApplicationController
   end
 
   def share
-    
+    @contact = Contact.new
   end
 
   def animal
