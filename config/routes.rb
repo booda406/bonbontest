@@ -12,6 +12,7 @@ Bonbontest::Application.routes.draw do
    get 'share' => 'turtles#share'
    get 'first' => 'turtles#first'
    get 'about' => 'turtles#about'
+   get 'sulcata' => 'turtles#sulcata'
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 
