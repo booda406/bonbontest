@@ -13,6 +13,8 @@ Bonbontest::Application.routes.draw do
    get 'first' => 'turtles#first'
    get 'about' => 'turtles#about'
    get 'sulcata' => 'turtles#sulcata'
+   post 'contacts' => 'contact#create'
+
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 
