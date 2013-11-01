@@ -79,7 +79,7 @@ html, body {
   height: auto;
   min-height: 100%;
   background-color:rgba(0, 25, 9 ,1 );
-  font-family: "Microsoft JhengHei","HelveticaNeue-Medium", "Helvetica Neue Medium", "Helvetica Neue", sans-serif;
+  font-family: "微軟正黑體" , "Microsoft JhengHei" , "正黑體", "HelveticaNeue-Medium", "Helvetica Neue Medium", "Helvetica Neue", , "Helvetica" , sans-serif;
 }
 
 /* line 15, ../sass/screen.scss */
