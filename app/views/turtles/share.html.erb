@@ -2,7 +2,20 @@
 	<h2>陸龜app
 	</h2>
 	<br>
-	<p>由於對於陸龜的熱愛，所以建立了龜龜日記來分享我的龜龜生活。不過在建置這個app的同時，作為一個使用者的考量，我發現除了寫程式之外的時間，幾乎很少有機會碰到電腦。現在幾乎上網都被平板或是手機取代，因為自己的方便，我規劃了app的建置，希望可以讓操作更加的便利。不過我本身只擅長寫iOS，所以Android的使用者抱歉了，QQ。若未來這個app或是網站真的受到大家喜愛和重視的時候，我會再請人把Android開發出來的～請大家多多指教囉！
+	<p>由於對於陸龜的熱愛，<br>
+        所以建立了龜龜日記來分享我的龜龜生活。<br>
+        不過在建置這個app的同時，<br>
+        作為一個使用者的考量，<br>
+        我發現除了寫程式之外的時間，<br>
+        幾乎很少有機會碰到電腦。<br>
+        現在幾乎上網都被平板或是手機取代，<br>
+        因為自己的方便，<br>
+        我規劃了app的建置，<br>
+        希望可以讓操作更加的便利。<br>
+        不過我本身只擅長寫iOS，<br>
+        所以Android的使用者抱歉了，QQ。<br>
+        若未來這個app或是網站真的受到大家喜愛和重視的時候，<br>
+        我會再請人把Android開發出來的～請大家多多指教囉！<br>
 </p>
 <br>
 	<%= simple_form_for(@contact) do |f| %>
@@ -12,17 +25,17 @@
         <%= f.input_field :name, :required => true, :label => "姓名：" , :class => "form-control" , :placeholder => "如何稱呼您呢？"%></div><br>
 </div><br>
 <div class="row">
-    <div class="col-xs-12 col-sm-9 col-md-6 col-lg-6 adjust-left">
+    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 adjust-left">
     <h4>Email：</h4>
     <%= f.input_field :email, :required => true, :label => "電子信箱：" , :class => "form-control"  , :placeholder => "留下您的email有任何龜龜的更新系統就會自動通知您喔～"%></div><br>
 </div><br>
 <div class="row">
-    <div class="col-xs-12 col-sm-12 col-lg-12 adjust-left">
+    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 adjust-left">
     <h4>想對我們說的話：</h4>
     <%= f.text_area :content, :required => true, :label => "想對我們說的話：" , :class => "form-control" , :style =>"overflow:visible" , :placeholder=> " 任何建議或想對我們說的話..."%></div>
 </div><br>
 <div class="row">
-    <div class="clearfix pull-right adjust-right">
+    <div class="col-xs-12 col-sm-12 col-md-7 col-lg-7 clearfix pull-right adjust-right">
     <%= f.submit "送出" , :class => "btn btn-primary" , :style => "font-size:16px; padding:4px 15px 4px 15px; margin-right:15px"%>
     <% end %></div>
 </div><br><br><br>
