@@ -114,8 +114,8 @@ html, body {
   -moz-border-radius-bottomright: 7px;
   border-bottom-left-radius: 7px;
   border-bottom-right-radius: 7px;
-  background-image: url(background_01.jpg);
-  background-size: cover;
+  background-image: url(banner_background.png);
+  background-size: constrain;
   background-repeat: no-repeat;
   background-position: center;
 
