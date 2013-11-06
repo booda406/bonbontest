@@ -13,9 +13,17 @@ Bonbontest::Application.routes.draw do
    get 'first' => 'turtles#first'# 沒用到
    get 'about' => 'turtles#about'
    get 'sulcata' => 'turtles#sulcata'
+   get 'pool_01' => 'turtles#pool_01'
+   get 'pool_02' => 'turtles#pool_02'
+   
    get 'leopard' => 'turtles#leopard'
    get 'reddot' => 'turtles#reddot'
    post 'contacts' => 'contact#create'# 沒用到
+
+
+   get 'blog_register' => 'turtles#blog_register'
+   get 'post_new' => 'turtles#post_new'
+
 
 
   # Example of regular route:

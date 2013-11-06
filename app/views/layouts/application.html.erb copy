@@ -53,22 +53,21 @@
 			<div class="space_holder">
 
 <%= yield %>
-
-		<div class="share_button"><a href="/share">寫我的龜龜日記</a></div>
-			</div><!-- space_holder -->
-</div><!-- wrapper -->
-	<div class="footer">
-		<div class="user_box">
-		<div class="user">
+</div><!-- space_holder -->
+			<div class="foot">
+				<div class="user_box">
+				<div class="user">
 					<a href="/about"><img src="/assets/face.jpg" class="face"></a>
 				<div class="user_info">
 					<h2>Robert</h2>
 					<p>icelorc@gmail.com</p>
 					<p>台北 Taipei</p>
-					<p><a href="/sulcata">＃蘇卡達</a> <a href="/share">＃紅腿</a> <a href="/share">＃豹龜</a></p>
+					<p><a href="/sulcata">＃蘇卡達</a> <a href="/leopard">＃豹龜</a> <a href="/reddot">＃櫻桃紅腿</a></p>
 				</div><!-- user_info -->
-		</div><!-- user -->
-		</div><!-- user_box -->
-	</div><!-- footer -->
+				</div><!-- user -->
+				</div><!-- user_box -->
+			</div><!-- footer -->
+</div><!-- wrapper -->
+
 </body>
 </html>
