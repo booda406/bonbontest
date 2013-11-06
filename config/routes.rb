@@ -20,7 +20,7 @@ Bonbontest::Application.routes.draw do
    get 'reddot' => 'turtles#reddot'
    post 'contacts' => 'contact#create'# 沒用到
 
-
+  # 以下為blog後台
    get 'blog_register' => 'turtles#blog_register'
    get 'post_new' => 'turtles#post_new'
 
