@@ -18,6 +18,10 @@ Bonbontest::Application.routes.draw do
    
    get 'leopard' => 'turtles#leopard'
    get 'reddot' => 'turtles#reddot'
+   get 'show_01' => 'turtles#show_01'
+   get 'show_02' => 'turtles#show_02'
+
+
    post 'contacts' => 'contact#create'# 沒用到
 
   # 以下為blog後台
