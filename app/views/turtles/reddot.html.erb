@@ -40,8 +40,12 @@
 		<p>最後來一張全景的環境圖。下次再寫一篇，環境如何布置的說明跟大家分享 :D</p>
 	</div>
 </div>
+<div>
+	<%= render 'comment/form' %>
+</div>
 	<% Comment.find(:all, :conditions => { :turtle_id => params[:turtle_id]}).each do |comment| %>
-<div class="respond">
+<div class="row row_respond">
+<div class="respond col-xs-8 col-sm-8 col-md-6 col-lg-6">
 	<div class="name">
 	<%= comment.name %><br>
 	</div>
@@ -50,8 +54,7 @@
 	<%= comment.created_at.strftime("%F %r") %>
 	</div>
 </div>
-	<% end %>
-<div>
-	<%= render 'comment/form' %>
 </div>
+
+	<% end %>
 <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 up"><a href="/leopard?turtle_id=2">上一篇</a></div><div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 down"><a href="/pool_01?turtle_id=4">下一篇</a></div>
