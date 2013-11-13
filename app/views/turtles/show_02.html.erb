@@ -32,7 +32,7 @@
 	</div>
 	
 	<div class="col-xs-12 col-sm-12 col-md-9 col-lg-6">
-		<p><br><br>展場還有小隻的印度星龜，不過常排文好像很多大大都說小印星真的很難照顧，實在很喜歡印星的花紋，不過如果要如手，我可能還是會挑大隻的吧！
+		<p><br><br>展場還有小隻的印度星龜，不過常排文好像很多大大都說小印星真的很難照顧，實在很喜歡印星的花紋，不過如果要入手，我可能還是會挑大隻的吧！
 	</p>
 	</div>
 	<div class="col-xs-12 col-sm-12 col-md-9 col-lg-8">
@@ -45,13 +45,17 @@
 	<div class="col-xs-12 col-sm-12 col-md-9 col-lg-8">
 		<img src="/assets/show_13.jpg" class="img-thumbnail">
 	</div>
-	<div class="col-xs-12 col-sm-12 col-md-9 col-lg-6">
+	<div class="col-xs-6 col-sm-8 col-md-8 col-lg-8">
 		<p>在展覽當天還有看到龜林隱叟大大，真的是太幸運了，跟他要了張名片，希望有機會可以跟他多多請教他 XD </p>
 	</div>
 </div>
-	<% Comment.find(:all, :conditions => { :turtle_id => params[:turtle_id]}).each do |comment| %>
 
-<div class="respond col-xs-12 col-sm-12 col-md-9 col-lg-6">
+<div>
+	<%= render 'comment/form' %>
+</div>
+	<% Comment.find(:all, :conditions => { :turtle_id => params[:turtle_id]}).each do |comment| %>
+<div class="row row_respond">
+<div class="respond col-xs-8 col-sm-8 col-md-6 col-lg-6">
 	<div class="name">
 	<%= comment.name %><br>
 	</div>
@@ -60,10 +64,9 @@
 	<%= comment.created_at.strftime("%F %r") %>
 	</div>
 </div>
+</div>
 
 	<% end %>
-<div>
-	<%= render 'comment/form' %>
-</div>
+
 
 <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 up"><a href="/pool_02?turtle_id=6">上一篇</a></div><div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 down"><a href="http://loveturtle.herokuapp.com/">下一篇</a></div>
