@@ -54,12 +54,19 @@
 		<img src="/assets/pool_07.jpg" class="img-thumbnail">
 	</div>
 </div>
+<div class="respond">
+	<% Comment.find(:all, :conditions => { :turtle_id => params[:turtle_id]}).each do |comment| %>
+	<div class="name">
+	<%= comment.name %>Kelly<br>
+	</div>
+	<%= comment.description %>龜龜日記GGOODD
+	<div class="time">
+	<%= comment.created_at.strftime("%F %r") %>
+	</div>
+	<% end %>
+</div>
 <div>
 	<%= render 'comment/form' %>
 </div>
-	<% Comment.find(:all, :conditions => { :turtle_id => params[:turtle_id]}).each do |comment| %>
-	<%= comment.name %><br>
-	<%= comment.description %><br>
-	<%= comment.created_at.strftime("%F %r") %><br>
-	<% end %>
+
 <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 up"><a href="/pool_01?turtle_id=4">上一篇</a></div><div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 down"><a href="/show_01?turtle_id=6">下一篇</a></div>

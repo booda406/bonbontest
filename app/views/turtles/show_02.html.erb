@@ -49,9 +49,6 @@
 		<p>在展覽當天還有看到龜林隱叟大大，真的是太幸運了，跟他要了張名片，希望有機會可以跟他多多請要他 XD </p>
 	</div>
 </div>
-<div>
-	<%= render 'comment/form' %>
-</div>
 <div class="respond">
 	<% Comment.find(:all, :conditions => { :turtle_id => params[:turtle_id]}).each do |comment| %>
 	<div class="name">
@@ -63,4 +60,8 @@
 	</div>
 	<% end %>
 </div>
+<div>
+	<%= render 'comment/form' %>
+</div>
+
 <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 up"><a href="/pool_02?turtle_id=6">上一篇</a></div><div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 down"><a href="http://loveturtle.herokuapp.com/">下一篇</a></div>

@@ -4,7 +4,7 @@ class CommentsController < ApplicationController
 		@comment = Comment.new(comment_params)
 
 			if @comment.save
-				redirect_to root_path
+				redirect_to :back
 				flash[notice: 'Comment was successfully created.']
 			else
 				flash[notice: 'Failed to create comment.']
