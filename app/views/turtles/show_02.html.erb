@@ -49,17 +49,17 @@
 		<p>在展覽當天還有看到龜林隱叟大大，真的是太幸運了，跟他要了張名片，希望有機會可以跟他多多請要他 XD </p>
 	</div>
 </div>
-<div class="respond">
 	<% Comment.find(:all, :conditions => { :turtle_id => params[:turtle_id]}).each do |comment| %>
+<div class="respond">
 	<div class="name">
-	<%= comment.name %>Kelly<br>
+	<%= comment.name %><br>
 	</div>
-	<%= comment.description %>龜龜日記GGOODD
+	<%= comment.description %>
 	<div class="time">
 	<%= comment.created_at.strftime("%F %r") %>
 	</div>
-	<% end %>
 </div>
+	<% end %>
 <div>
 	<%= render 'comment/form' %>
 </div>

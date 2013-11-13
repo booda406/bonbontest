@@ -81,19 +81,18 @@
 	</div>
 
 </div>
-<div class="respond">
 	<% Comment.find(:all, :conditions => { :turtle_id => params[:turtle_id]}).each do |comment| %>
+<div class="respond">
 	<div class="name">
-	<%= comment.name %>Kelly<br>
+	<%= comment.name %><br>
 	</div>
-	<%= comment.description %>龜龜日記GGOODD
+	<%= comment.description %>
 	<div class="time">
 	<%= comment.created_at.strftime("%F %r") %>
 	</div>
-	<% end %>
 </div>
+	<% end %>
 <div>
 	<%= render 'comment/form' %>
 </div>
-
 <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 up"><a href="/pool_02?turtle_id=5">上一篇</a></div><div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 down"><a href="/show_02?turtle_id=7">下一篇</a></div>

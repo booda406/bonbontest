@@ -33,8 +33,8 @@
 		<p>今天第一次餵乖乖，真的是超愛！以後要多記錄跟大家分享，也希望菠蘿能平平安安的長大！！！</p>
 	</div>
 </div>
-<div class="respond">
 	<% Comment.find(:all, :conditions => { :turtle_id => params[:turtle_id]}).each do |comment| %>
+<div class="respond">
 	<div class="name">
 	<%= comment.name %><br>
 	</div>
@@ -42,8 +42,8 @@
 	<div class="time">
 	<%= comment.created_at.strftime("%F %r") %>
 	</div>
-	<% end %>
 </div>
+	<% end %>
 <div>
 	<%= render 'comment/form' %>
 </div>
