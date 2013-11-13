@@ -11,12 +11,13 @@
     </div>
   <% end %>
 
-  <div class="row">
+<div class="respond_box">
+  <div class="row respond_inbox">
     <div class="col-xs-12 col-sm-4 col-md-4 col-lg-3 adjust-left">
      <%= f.input :name, :required => true, :label => "姓名", input_html: { class: "form-control" } %>
     </div>
   </div>
-  <div class="row">
+  <div class="row respond_inbox">
     <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 adjust-left">
       <h4>想說的話</h4>
       <%= f.text_area :description, :required => true, :class => "form-control", :style => "overflow:visible" %>
@@ -26,4 +27,6 @@
   <div class="actions">
     <%= f.submit "送出" %>
   </div>
+
+</div>
 <% end %>
