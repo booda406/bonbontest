@@ -8,7 +8,7 @@ class UserMailer < ActionMailer::Base
   #
   def contact(contact)
     @contact = contact
-    mail(to: "tough@fontech.com.tw", subject: '我有話要說')
+    mail(to: "robert@fontech.com.tw", subject: '我有話要說')
   end
 
 end
