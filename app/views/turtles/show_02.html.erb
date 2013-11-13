@@ -81,4 +81,11 @@
 	</div>
 
 </div>
-<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 up"><a href="/pool_02">上一篇</a></div><div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 down"><a href="http://loveturtle.herokuapp.com/">下一篇</a></div>
+<div>
+	<%= render 'comment/form' %>
+</div>
+	<% Comment.find(:all, :conditions => { :turtle_id => params[:turtle_id]}).each do |comment| %>
+	<%= comment.name %>
+	<%= comment.description %>
+	<% end %>
+<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 up"><a href="/pool_02?turtle_id=6">上一篇</a></div><div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 down"><a href="http://loveturtle.herokuapp.com/">下一篇</a></div>
