@@ -24,6 +24,7 @@ Bonbontest::Application.routes.draw do
    get 'show_02' => 'turtles#show_02'
 
 
+
    post 'contacts' => 'contact#create'# 沒用到
 
   # 以下為blog後台
