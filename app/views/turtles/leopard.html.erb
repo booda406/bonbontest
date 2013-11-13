@@ -33,4 +33,19 @@
 			<p>療程結束之後，我以為一切都會回復平靜，豹哥應該會好起來。但因為最近天氣溫度極速下降，我對於溫度的掌控不是做的很好，結果豹哥的病情復發了。再帶去看醫生之後結果不是很樂觀，最後還是無法抵抗病魔，就這樣走了。10/23的時候離開了我們，雖然相處只有短短的幾個月，但我真的從豹哥身上學到很多養龜的知識還有經驗，謝謝他，希望他一路好走。有空我會再把醫治烏龜的經驗分享出來，希望大家都可以避免這種不幸的事情發生。</p>
 		</div>	
 </div>
-<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 up"><a href="/sulcata">上一篇</a></div><div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 down"><a href="/reddot">下一篇</a></div>
+	<% Comment.find(:all, :conditions => { :turtle_id => params[:turtle_id]}).each do |comment| %>
+<div class="respond">
+	<div class="name">
+	<%= comment.name %><br>
+	</div>
+	<%= comment.description %>
+	<div class="time">
+	<%= comment.created_at.strftime("%F %r") %>
+	</div>
+</div>
+	<% end %>
+<div>
+	<%= render 'comment/form' %>
+</div>
+
+<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 up"><a href="/sulcata?turtle_id=1">上一篇</a></div><div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 down"><a href="/reddot?turtle_id=3">下一篇</a></div>

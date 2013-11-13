@@ -90,7 +90,31 @@ class TurtlesController < ApplicationController
   end
 
   def sulcata
-    
+    @comment = Comment.new
+  end
+
+  def leopard
+    @comment = Comment.new
+  end
+
+  def reddot
+    @comment = Comment.new
+  end
+
+  def pool_01
+    @comment = Comment.new
+  end
+
+  def pool_02
+    @comment = Comment.new
+  end
+
+  def show_01
+    @comment = Comment.new
+  end
+
+  def show_02
+    @comment = Comment.new
   end
 
   private
