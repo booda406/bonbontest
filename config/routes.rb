@@ -1,6 +1,8 @@
 Bonbontest::Application.routes.draw do
   resources :turtles
 
+  resources :comments
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
@@ -18,6 +20,10 @@ Bonbontest::Application.routes.draw do
    
    get 'leopard' => 'turtles#leopard'
    get 'reddot' => 'turtles#reddot'
+   get 'show_01' => 'turtles#show_01'
+   get 'show_02' => 'turtles#show_02'
+
+
    post 'contacts' => 'contact#create'# 沒用到
 
   # 以下為blog後台
