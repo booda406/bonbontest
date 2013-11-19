@@ -30,6 +30,9 @@ gem 'turbolinks'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 1.2'
 
+#analysis
+gem 'cohort_me'
+
 #pop-up window
 gem 'fancybox2-rails', '~>0.2.4'
 
