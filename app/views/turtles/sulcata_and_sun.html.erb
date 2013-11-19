@@ -1,3 +1,7 @@
+<div style="display:none" id="pop">
+<img class="fancybox" src="/assets/pop2.png" />
+</div>
+<body onload="pop_up();">
 <div class="description  col-xs-12 col-sm-12 col-md-9 col-lg-9">
 		<h2>蘇卡達和陽光
 		</h2>
@@ -65,4 +69,11 @@
 	<% end %>
 
 
-<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 up"><a href="/pool_02?turtle_id=6">上一篇</a></div><div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 down"><a href="http://loveturtle.herokuapp.com/">下一篇</a></div>
+<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 up"><a href="/show_02?turtle_id=7">上一篇</a></div><div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 down"><a href="http://loveturtle.herokuapp.com/">下一篇</a></div>
+</body>
+<script type="text/javascript">
+		$("#pop").fancybox();
+		function pop_up(){
+			$("#pop").click();
+		}
+</script>
