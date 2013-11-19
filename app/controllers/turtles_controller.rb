@@ -77,8 +77,9 @@ class TurtlesController < ApplicationController
     
   end
 
-  def follow
-    
+  def performance
+    @cohorts = CohortMe.analyze(period: "weeks", activation_class: Document)
+    render action: 'performance'
   end
 
   def first
@@ -114,6 +115,10 @@ class TurtlesController < ApplicationController
   end
 
   def show_02
+    @comment = Comment.new
+  end
+
+  def turtle08
     @comment = Comment.new
   end
 

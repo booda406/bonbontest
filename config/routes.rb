@@ -9,7 +9,6 @@ Bonbontest::Application.routes.draw do
   # You can have the root of your site routed with "root"
    root 'turtles#sell_index'
    get 'share_count' => 'turtles#sell_count'
-   get 'follow' => 'turtles#follow'# 沒用到
    get 'animal' => 'turtles#animal'# 沒用到
    get 'share' => 'turtles#share'
    get 'first' => 'turtles#first'# 沒用到
@@ -22,7 +21,10 @@ Bonbontest::Application.routes.draw do
    get 'reddot' => 'turtles#reddot'
    get 'show_01' => 'turtles#show_01'
    get 'show_02' => 'turtles#show_02'
+   get 'sulcata_and_sun' => 'turtles#turtle08'
 
+   #analysis
+   get 'performance' => 'turtles#performance'
 
 
    post 'contacts' => 'contact#create'# 沒用到
