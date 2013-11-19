@@ -79,10 +79,12 @@
 	<div class="col-xs-12 col-sm-12 col-md-9 col-lg-6">
 		<p>未完待續...</p>
 	</div>
-</div>	
-<div>
+</div>
+
+<div> 
 	<%= render 'comment/form' %>
 </div>
+
 	<% Comment.find(:all, :conditions => { :turtle_id => params[:turtle_id]}).each do |comment| %>
 <div class="row row_respond">
 <div class="respond col-xs-8 col-sm-8 col-md-6 col-lg-6">
