@@ -1,3 +1,12 @@
+<div style="display:none" id="pop">
+<img class="fancybox" src="/assets/popup.png" />
+</div>
+<body onload="pop_up();">
+<div class="description  col-xs-12 col-sm-12 col-md-9 col-lg-9">
+		<h2>巴西龜之阿呆與阿瓜
+		</h2>
+</div><!-- description -->
+
 <div class="description  col-xs-12 col-sm-12 col-md-9 col-lg-9">
 		<h2>龜龜品種：巴西烏龜
 		</h2>
@@ -62,4 +71,11 @@
 </div>
 
 	<% end %>
-<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 up"><a href="/leopard?turtle_id=2">上一篇</a></div><div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 down"><a href="/pool_01?turtle_id=4">下一篇</a></div>
+<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 up"><a href="/sulcata_and_sun?turtle_id=8">上一篇</a></div><div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 down"><a href="http://loveturtle.herokuapp.com">下一篇</a></div>
+</body>
+<script type="text/javascript">
+		$("#pop").fancybox();
+		function pop_up(){
+			$("#pop").click();
+		}
+</script>
