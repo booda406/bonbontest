@@ -23,6 +23,7 @@ Bonbontest::Application.routes.draw do
    get 'show_02' => 'turtles#show_02'
    get 'sulcata_and_sun' => 'turtles#turtle08'
    get 'redearturtle' => 'turtles#redearturtle'
+   get 'reddot_and_sun' => 'turtles#reddot_and_sun'
    #analysis
    get 'performance' => 'turtles#performance'
 
