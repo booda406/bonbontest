@@ -71,8 +71,7 @@ config.action_mailer.smtp_settings = {
     :port => "587",
     :domain => "gmail.com",
     :authentication => "plain",
-    :user_name => "steven@fontech.com.tw",
-    :password => "fontech12345",
+
     :enable_starttls_auto => true
  }
   # Enable locale fallbacks for I18n (makes lookups for any locale fall back to
