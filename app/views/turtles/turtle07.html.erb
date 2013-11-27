@@ -1,0 +1,73 @@
+<div class="description  col-xs-12 col-sm-12 col-md-9 col-lg-9">
+		<h2>寵物用品展
+		</h2>
+</div><!-- description -->
+<div class="photo_pool col-12 clearfix">
+	<div class="col-xs-12 col-sm-12 col-md-9 col-lg-6">
+		<p>在上一篇看過這麼多巨獸之後，其實在展場中間還是有許多龜龜的。<br>
+			每次看到這樣一排的爬缸內心都會覺得很熱血，<br>
+			希望有一天也可以有這樣自己的展場 :P<br><br>
+		</p>
+	</div>
+	<div class="col-xs-12 col-sm-12 col-md-9 col-lg-8">
+		<img src="/assets/show_09.jpg" class="img-thumbnail">
+	</div>
+	<div class="col-xs-12 col-sm-12 col-md-9 col-lg-6">
+		<p>之前在水手台北店的時候就看過挺胸龜了，<br>
+			這真的是一種讓人感覺很華麗的龜，<br>
+			不論是他的色澤或是體態，<br>
+			不過他的價格也十分華麗就是 XD<br><br>
+	</p>
+	</div>
+	<div class="col-xs-12 col-sm-12 col-md-9 col-lg-8">
+		<img src="/assets/show_10.jpg" class="img-thumbnail">
+	</div>
+	
+	<div class="col-xs-12 col-sm-12 col-md-9 col-lg-6 ">
+		<p><br>看到這缸的蘇卡達，實在很難想像有一天他們會變成外面的巨獸...
+	</p>
+	</div>
+	<div class="col-xs-12 col-sm-12 col-md-9 col-lg-8">
+		<img src="/assets/show_11.jpg" class="img-thumbnail">
+	</div>
+	
+	<div class="col-xs-12 col-sm-12 col-md-9 col-lg-6">
+		<p><br><br>展場還有小隻的印度星龜，不過常排文好像很多大大都說小印星真的很難照顧，實在很喜歡印星的花紋，不過如果要入手，我可能還是會挑大隻的吧！
+	</p>
+	</div>
+	<div class="col-xs-12 col-sm-12 col-md-9 col-lg-8">
+		<img src="/assets/show_12.jpg" class="img-thumbnail">
+	</div>
+	<div class="col-xs-12 col-sm-12 col-md-9 col-lg-6">
+		<p>在牆上還有陸龜寶典提供大家參考！哈哈哈～希望大家可以透過這個對陸龜有更進一步的了解！
+	</p>
+	</div>
+	<div class="col-xs-12 col-sm-12 col-md-9 col-lg-8">
+		<img src="/assets/show_13.jpg" class="img-thumbnail">
+	</div>
+	<div class="col-xs-6 col-sm-8 col-md-8 col-lg-8">
+		<p>在展覽當天還有看到龜林隱叟大大，真的是太幸運了，跟他要了張名片，希望有機會可以跟他多多請教他 XD </p>
+	</div>
+</div>
+
+<div>
+	<%= render 'comment/form' %>
+</div>
+	<% Comment.find(:all, :conditions => { :turtle_id => params[:turtle_id]}).each do |comment| %>
+<div class="row row_respond">
+<div class="respond col-xs-8 col-sm-8 col-md-6 col-lg-6">
+	<div class="name">
+	<%= comment.name %><br>
+	</div>
+	<%= comment.description %>
+	<div class="time">
+	<%= comment.created_at.strftime("%F %r") %>
+	</div>
+</div>
+</div>
+
+	<% end %>
+
+
+<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 up"><a href="/show_01?turtle_id=6">上一篇</a></div>
+<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 down"><a href="/sulcata_and_sun?turtle_id=8">下一篇</a></div>

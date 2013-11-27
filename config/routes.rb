@@ -14,12 +14,12 @@ Bonbontest::Application.routes.draw do
    get 'animal' => 'turtles#animal'# 沒用到
    get 'first' => 'turtles#first'# 沒用到
 
-   get 'sulcata' => 'turtles#sulcata'
-   get 'pool_01' => 'turtles#pool_01'
-   get 'pool_02' => 'turtles#pool_02'   
-   get 'leopard' => 'turtles#leopard'
-   get 'reddot' => 'turtles#reddot'
-   get 'show_01' => 'turtles#show_01'
+   get 'sulcata' => 'turtles#turtle01'
+   get 'pool_01' => 'turtles#turtle04'
+   get 'pool_02' => 'turtles#turtle05'   
+   get 'leopard' => 'turtles#turtle02'
+   get 'reddot' => 'turtles#turtle03'
+   get 'show_01' => 'turtles#turtle06'
    get 'show_02' => 'turtles#turtle07'
    get 'sulcata_and_sun' => 'turtles#turtle08'
    get 'redearturtle' => 'turtles#turtle09'
