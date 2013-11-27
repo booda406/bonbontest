@@ -20,10 +20,11 @@ Bonbontest::Application.routes.draw do
    get 'leopard' => 'turtles#leopard'
    get 'reddot' => 'turtles#reddot'
    get 'show_01' => 'turtles#show_01'
-   get 'show_02' => 'turtles#show_02'
+   get 'show_02' => 'turtles#turtle07'
    get 'sulcata_and_sun' => 'turtles#turtle08'
+   get 'redearturtle' => 'turtles#turtle09'
 
-  # analysis
+   #analysis
    get 'performance' => 'turtles#performance'
 
   # post

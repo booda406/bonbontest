@@ -1,0 +1,81 @@
+<div style="display:none" id="pop">
+<img class="fancybox" src="/assets/popup.png" />
+</div>
+<body onload="pop_up();">
+<div class="description  col-xs-12 col-sm-12 col-md-9 col-lg-9">
+		<h2>巴西龜之阿呆與阿瓜
+		</h2>
+</div><!-- description -->
+
+<div class="description  col-xs-12 col-sm-12 col-md-9 col-lg-9">
+		<h2>龜龜品種：巴西烏龜
+		</h2>
+		<h2>龜名：阿呆與阿瓜
+		</h2>
+		<h2>龜重：566g與654g
+		</h2>
+		<h2>龜長：腹甲最短距離 12 cm</h2><br>
+</div><!-- description -->
+<div class="photo col-12 clearfix">
+	<div class="col-xs-12 col-sm-12 col-md-9 col-lg-9">
+		<img src="/assets/redear04.jpg" class="img-thumbnail">
+	</div>
+	<div class="col-xs-12 col-sm-12 col-md-9 col-lg-9">
+		<p>左邊顏色比較深的是阿瓜，右邊顏色比較淺的是阿呆。阿呆平常比較憨厚，常會搶不到食物被欺負，阿瓜比較兇猛，攻擊性比較強，之前在幫他們整理小窩時曾經被阿瓜咬了一大口...QQ </p>
+	</div>
+	<div class="col-xs-12 col-sm-12 col-md-9 col-lg-9">
+		<img src="/assets/redear06.jpg" class="img-thumbnail">
+	</div>
+	<div class="col-xs-12 col-sm-12 col-md-9 col-lg-9">
+		<p>還記得三年前，從寵物店買回來的時候他們都還只有十元硬幣的大小。</p>
+	</div>
+	<div class="col-xs-12 col-sm-12 col-md-9 col-lg-9">
+		<img src="/assets/redear03.jpg" class="img-thumbnail">
+	</div>
+	<div class="col-xs-12 col-sm-12 col-md-9 col-lg-9 ">
+		<p>短短的三年過後，他現在居然長得快比我的手掌還大，而且重量大概有600g左右，實在可以說是成長力驚人呀！！！</p>
+	</div>
+	<div class="col-xs-12 col-sm-12 col-md-9 col-lg-9">
+		<img src="/assets/redear01.jpg" class="img-thumbnail">
+	</div>
+	<div class="col-xs-12 col-sm-12 col-md-9 col-lg-9">
+		<p>當初在養的時候，只是拿一般水族店小小的水族箱來養。</p>
+	</div>
+	<div class="col-xs-12 col-sm-12 col-md-9 col-lg-9">
+		<img src="/assets/redear02.jpg" class="img-thumbnail">
+	</div>
+	<div class="col-xs-12 col-sm-12 col-md-9 col-lg-9">
+		<p>養到現在用的是目前IKEA可以買到最大的整理箱XD 放了些磚頭讓他有個可以曬曬太陽的地方，加個過濾器，因為我沒有很勤勞的會天天換水和撈大便 :P</p>
+	</div>
+		<div class="col-xs-12 col-sm-12 col-md-9 col-lg-9">
+		<img src="/assets/redear04.jpg" class="img-thumbnail">
+	</div>
+	<div class="col-xs-12 col-sm-12 col-md-9 col-lg-9">
+		<p>他們小時候真的很可愛，還記得當時我常常把他們拿到手上把玩，不過現在真的是很難讓他們乖乖在手上，而且一個不小心可能就會有一塊肉被他們咬掉...下次介紹巴西龜的食物篇好了～我覺得看他們狩獵或許也是養巴西龜的樂趣之一！</p>
+	</div>
+</div>
+<div>
+	<%= render 'comment/form' %>
+</div>
+	<% Comment.find(:all, :conditions => { :turtle_id => params[:turtle_id]}).each do |comment| %>
+<div class="row row_respond">
+<div class="respond col-xs-8 col-sm-8 col-md-6 col-lg-6">
+	<div class="name">
+	<%= comment.name %><br>
+	</div>
+	<%= comment.description %>
+	<div class="time">
+	<%= comment.created_at.strftime("%F %r") %>
+	</div>
+</div>
+</div>
+
+	<% end %>
+<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 up"><a href="/sulcata_and_sun?turtle_id=8">上一篇</a></div><div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 down"><a href="http://loveturtle.herokuapp.com">下一篇</a></div>
+</body>
+<script type="text/javascript">
+		$("#pop").fancybox();
+		function pop_up(){
+			$("#pop").click();
+		}
+</script>
