@@ -114,11 +114,15 @@ class TurtlesController < ApplicationController
     @comment = Comment.new
   end
 
-  def show_02
+  def turtle07
     @comment = Comment.new
   end
 
   def turtle08
+    @comment = Comment.new
+  end
+
+  def turtle09
     @comment = Comment.new
   end
 
