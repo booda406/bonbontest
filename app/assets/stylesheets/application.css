@@ -10,5 +10,7 @@
  *
  *= require_self
  *= require fancybox
+ *= require bootstrap_and_overrides
+ *= require bootstrap-datepicker
  *= require_tree .
  */

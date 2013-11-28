@@ -1,4 +1,8 @@
 Bonbontest::Application.routes.draw do
+  devise_for :users, :controller => { 
+    :omniauth_callbacks => 'users/omniauth_callbacks' 
+  }
+
   resources :turtles
 
   resources :comments

@@ -19,7 +19,7 @@ gem 'uglifier', '>= 1.3.0'
 gem 'coffee-rails', '~> 4.0.0'
 
 # See https://github.com/sstephenson/execjs#readme for more supported runtimes
-# gem 'therubyracer', platforms: :ruby
+ gem 'therubyracer', platforms: :ruby
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
@@ -32,6 +32,21 @@ gem 'jbuilder', '~> 1.2'
 
 #analysis
 gem 'cohort_me'
+
+#login
+gem 'devise'
+
+#fb login
+gem 'omniauth'
+gem 'omniauth-facebook'
+
+#manage user, admin
+gem 'cancan'
+
+#select date use calender
+gem 'less-rails'
+gem 'twitter-bootstrap-rails', :git => 'git://github.com/booda406/twitter-bootstrap-rails.git'
+gem 'bootstrap-datepicker-rails', :require => 'bootstrap-datepicker-rails',:git => 'git://github.com/booda406/bootstrap-datepicker-rails.git'
 
 #pop-up window
 gem 'fancybox2-rails', '~>0.2.4'

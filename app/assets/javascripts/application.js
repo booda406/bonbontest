@@ -12,6 +12,8 @@
 //
 //= require jquery
 //= require fancybox
+//= require bootstrap-datepicker
 //= require jquery_ujs
+//= require twitter/bootstrap
 //= require turbolinks
 //= require_tree .
