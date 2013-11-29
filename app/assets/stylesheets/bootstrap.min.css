@@ -7501,12 +7501,12 @@ p{
 
 /* line 97, ../sass/screen.scss */
 .up a:hover {
-	color: white
+	color: white;
   transition: 0.3s;
   text-shadow: 2px 2px rgba(20%,20%,40%,0.1);
 }
 .up a:active {
-	color: white
+	color: white;
   transition: 0.3s;
   text-shadow: 2px 2px rgba(20%,20%,40%,0.1);
 }
@@ -7528,13 +7528,13 @@ p{
 
 /* line 97, ../sass/screen.scss */
 .down a:hover {
-	color: white
+	color: white;
   transition: 0.3s;
   text-shadow: 2px 2px rgba(20%,20%,40%,0.1);
 }
 
 .down a:active {
-	color: white
+	color: white;
   transition: 0.3s;
   text-shadow: 2px 2px rgba(20%,20%,40%,0.1);
 }
