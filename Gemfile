@@ -19,10 +19,13 @@ gem 'uglifier', '>= 1.3.0'
 gem 'coffee-rails', '~> 4.0.0'
 
 # See https://github.com/sstephenson/execjs#readme for more supported runtimes
-# gem 'therubyracer', platforms: :ruby
+ gem 'therubyracer', platforms: :ruby
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
+
+# make jquery loading faster cannot cause need to refresh to get function
+gem 'jquery-turbolinks'
 
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
 gem 'turbolinks'
@@ -32,6 +35,32 @@ gem 'jbuilder', '~> 1.2'
 
 #analysis
 gem 'cohort_me'
+
+#fb login
+gem 'omniauth'
+gem 'omniauth-facebook'
+
+#manage user, admin
+gem 'cancan'
+
+#upload photo
+gem 'carrierwave'
+gem 'mini_magick'
+
+#article editor
+gem 'ckeditor', :git => 'https://github.com/galetahub/ckeditor.git'#can't without the URL if need //= require ckeditor/override
+
+#tag
+gem 'acts-as-taggable-on'
+gem 'bootstrap-tagsinput-rails'
+
+#login
+gem 'devise'
+
+#select date use calender
+gem 'less-rails'
+gem 'twitter-bootstrap-rails', :git => 'git://github.com/booda406/twitter-bootstrap-rails.git'
+gem 'bootstrap-datepicker-rails', :require => 'bootstrap-datepicker-rails',:git => 'git://github.com/booda406/bootstrap-datepicker-rails.git'
 
 #pop-up window
 gem 'fancybox2-rails', '~>0.2.4'

@@ -10,8 +10,13 @@
 // Read Sprockets README (https://github.com/sstephenson/sprockets#sprockets-directives) for details
 // about supported directives.
 //
+//= require jquery.turbolinks
 //= require jquery
 //= require fancybox
+//= require bootstrap-datepicker
 //= require jquery_ujs
-//= require turbolinks
+//= require twitter/bootstrap
+//= require bootstrap-tagsinput
+//= require ckeditor/override
+//= require ckeditor/init
 //= require_tree .

@@ -1,7 +1,14 @@
 Bonbontest::Application.routes.draw do
+  mount Ckeditor::Engine => '/ckeditor'
+  devise_for :users, :controller => { 
+    :omniauth_callbacks => 'users/omniauth_callbacks' 
+  }
+
   resources :turtles
 
   resources :comments
+
+  resources :articles
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
@@ -9,26 +16,27 @@ Bonbontest::Application.routes.draw do
   # You can have the root of your site routed with "root"
    root 'turtles#sell_index'
    get 'share_count' => 'turtles#sell_count'
-   get 'animal' => 'turtles#animal'# 沒用到
    get 'share' => 'turtles#share'
-   get 'first' => 'turtles#first'# 沒用到
    get 'about' => 'turtles#about'
-   get 'sulcata' => 'turtles#sulcata'
-   get 'pool_01' => 'turtles#pool_01'
-   get 'pool_02' => 'turtles#pool_02'
-   
-   get 'leopard' => 'turtles#leopard'
-   get 'reddot' => 'turtles#reddot'
-   get 'show_01' => 'turtles#show_01'
-   get 'show_02' => 'turtles#show_02'
+   get 'animal' => 'turtles#animal'# 沒用到
+   get 'first' => 'turtles#first'# 沒用到
+
+   get 'sulcata' => 'turtles#turtle01'
+   get 'pool_01' => 'turtles#turtle04'
+   get 'pool_02' => 'turtles#turtle05'   
+   get 'leopard' => 'turtles#turtle02'
+   get 'reddot' => 'turtles#turtle03'
+   get 'show_01' => 'turtles#turtle06'
+   get 'show_02' => 'turtles#turtle07'
    get 'sulcata_and_sun' => 'turtles#turtle08'
-   get 'redearturtle' => 'turtles#redearturtle'
-   get 'reddot_and_sun' => 'turtles#reddot_and_sun'
+   get 'redearturtle' => 'turtles#turtle09'
+   get 'reddot_and_sun' => 'turtles#turtle10'
+
    #analysis
    get 'performance' => 'turtles#performance'
 
-
-   post 'contacts' => 'contact#create'# 沒用到
+  # post
+   post 'contacts' => 'contact#create'
 
   # 以下為blog後台
    get 'blog_register' => 'turtles#blog_register'
