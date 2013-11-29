@@ -11,4 +11,7 @@ class ApplicationController < ActionController::Base
   	devise_parameter_sanitizer.for(:sign_up) { |u| u.permit(:name, :email, :sex, :birthday, :password, :password_confirmation) }
   end
 
+  def ckeditor_filebrowser_scope(options = {})
+    { :order => [:id, :desc], :user_id => current_user.id }.merge(options)
+  end
 end

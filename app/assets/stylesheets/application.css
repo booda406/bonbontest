@@ -12,5 +12,6 @@
  *= require fancybox
  *= require bootstrap_and_overrides
  *= require bootstrap-datepicker
+ *= require bootstrap-tagsinput
  *= require_tree .
  */

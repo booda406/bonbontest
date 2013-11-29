@@ -1,0 +1,25 @@
+<%= simple_form_for(@article) do |f| %>
+	<% if @article.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@article.errors.count, "error") %> prohibited this turtle from being saved:</h2>
+
+      <ul>
+      <% @article.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <%= f.input :title, :label => "文章標題" %>
+  <%= f.input :category_id, :label => "種類", :collection => Category.all %>
+  <%= f.input :photo, :label => "封面照片" %>
+  <%= f.input :content, :as => :ckeditor, :input_html => { :ckeditor => { :height => 600, :width => 600 } }, :label => false %>
+  <%= f.input :tag_list, :input_html => { :data => { :role => "tagsinput" } }, :label => "標籤" %>
+  <%= f.input :status, :collection => ["草稿","發表"], :prompt => "選擇狀態", :label => "是否發表" %>
+
+ <div class="actions">
+    <%= f.submit "送出" %>
+  </div>
+
+<% end %>

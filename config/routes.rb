@@ -1,4 +1,5 @@
 Bonbontest::Application.routes.draw do
+  mount Ckeditor::Engine => '/ckeditor'
   devise_for :users, :controller => { 
     :omniauth_callbacks => 'users/omniauth_callbacks' 
   }
@@ -6,6 +7,8 @@ Bonbontest::Application.routes.draw do
   resources :turtles
 
   resources :comments
+
+  resources :articles
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
