@@ -1,0 +1,81 @@
+<div style="display:none" id="pop">
+<img class="fancybox" src="/assets/popup.png" />
+</div>
+<body onload="pop_up();">
+
+<div class="description  col-xs-12 col-sm-12 col-md-9 col-lg-9">
+		<h2>點點踏青</h2>
+</div><!-- description -->
+<div class="photo_pool col-12 clearfix">
+	<div class="col-xs-12 col-sm-12 col-md-9 col-lg-6">
+		<p>據天氣預報顯示，這禮拜四好像又有新的一波封鋒面要來（意思是天氣又要變冷了呀～）趕緊趁這週末天氣還暖和的時候帶龜龜們去散步～<br>
+		</p>
+	</div>
+	<div class="col-xs-12 col-sm-12 col-md-9 col-lg-8">
+		<img src="/assets/reddot_and_sun03.jpg" class="img-thumbnail">
+	</div>
+	<div class="col-xs-12 col-sm-12 col-md-9 col-lg-6">
+		<p>今天散步的主角是我們家點點，一隻挑食又不愛動的櫻桃紅腿。
+		</p>
+	</div>
+	<div class="col-xs-12 col-sm-12 col-md-9 col-lg-8">
+		<img src="/assets/reddot_and_sun04.jpg" class="img-thumbnail">
+	</div>
+	
+	<div class="col-xs-12 col-sm-12 col-md-9 col-lg-6 ">
+		<p>他的肚子中間相較於一般這種體型的陸龜來說好像有些軟，而且他走路的時候好像沒辦法完全把身體支撐起來，顯得有氣無力的樣子。QQ
+		</p>
+	</div>
+	<div class="col-xs-12 col-sm-12 col-md-9 col-lg-8">
+		<img src="/assets/reddot_and_sun05.jpg" class="img-thumbnail">
+	</div>
+	
+	<div class="col-xs-12 col-sm-12 col-md-9 col-lg-6">
+		<p>上次跟醫生討論了一下，好像是缺鈣的問題，所以才會導致這樣，不然應該是要像菠蘿走路一樣全部挺起來，而且肚子應該硬度是要更硬，甚至是沒辦法按下去的 @@
+		</p>
+	</div>
+	<div class="col-xs-12 col-sm-12 col-md-9 col-lg-8">
+		<img src="/assets/reddot_and_sun01.jpg" class="img-thumbnail">
+	</div>
+	<div class="col-xs-12 col-sm-12 col-md-9 col-lg-6">
+		<p>現在在外面租公寓，沒有陽台，而且又住在寒冷潮溼的木柵地區，冬天的陽光真可說是難得的景象呀！！！（跪拜）
+		</p>
+	</div>
+	<div class="col-xs-12 col-sm-12 col-md-9 col-lg-8">
+		<img src="/assets/reddot_and_sun06.jpg" class="img-thumbnail">
+	</div>
+	<div class="col-xs-6 col-sm-8 col-md-8 col-lg-8">
+		<p>UVB燈的紫外線好像又很有限，這對我來說真的是個困難又複雜的問題阿～不知道大家對於曬太陽和紫外線這樣的議題有什麼樣的看法，可以在下面留言討論唷～  
+	</div>
+	<div class="col-xs-12 col-sm-12 col-md-9 col-lg-8">
+		<img src="/assets/reddot_and_sun02.jpg" class="img-thumbnail">
+	</div>
+</div>
+
+<div>
+	<%= render 'comment/form' %>
+</div>
+	<% Comment.find(:all, :conditions => { :turtle_id => params[:turtle_id]}).each do |comment| %>
+<div class="row row_respond">
+<div class="respond col-xs-8 col-sm-8 col-md-6 col-lg-6">
+	<div class="name">
+	<%= comment.name %><br>
+	</div>
+	<%= comment.description %>
+	<div class="time">
+	<%= comment.created_at.strftime("%F %r") %>
+	</div>
+</div>
+</div>
+
+	<% end %>
+
+
+<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 up"><a href="/redearturtle?turtleid=9">上一篇</a></div><div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 down"><a href="http://loveturtle.herokuapp.com/">下一篇</a></div>
+</body>
+<script type="text/javascript">
+		$("#pop").fancybox();
+		function pop_up(){
+			$("#pop").click();
+		}
+</script>
