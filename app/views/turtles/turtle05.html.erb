@@ -1,0 +1,75 @@
+<div class="description  col-xs-12 col-sm-12 col-md-9 col-lg-9">
+		<h2>環境介紹：點點的家（植物篇）
+		</h2>
+		<h2>龜名：點點
+		</h2>
+		<h2>龜重：132 g
+		</h2>
+		<h2>龜長：腹甲最短距離 8.5 cm</h2><br>
+</div><!-- description -->
+<div class="photo_pool col-12 clearfix">
+	<div class="col-xs-12 col-sm-12 col-md-9 col-lg-9">
+		<p>
+		應該說植物對於造景來說是不可或缺的一環。<br>
+		所以到建國花市買了些室內小盆栽，<br>
+		和一些漂亮的小花盆，<br>
+		一棵一棵的把小植物種進去。
+		</p>
+	</div>
+	<div class="col-xs-12 col-sm-12 col-md-9 col-lg-9">
+		<img src="/assets/pool_06.jpg" class="img-thumbnail">
+	</div>
+	<div class="col-xs-12 col-sm-12 col-md-9 col-lg-9">
+		<p>水盆對於點點來說是不可或缺的。<br>
+			腿類的龜好像都很需要水，<br>
+			大口大口的喝水對他們來說應該也是必要的！<br>
+			於是我放了一個大水盆在缸子裡面。<br>
+			同時我在土堆裡也灑了許多小白菜的種子，<br>
+			讓水盆周圍佈滿了植物，<br>
+			應該就很有回到叢林的感覺吧 XD
+	</p>
+	</div>
+	<div class="col-xs-12 col-sm-12 col-md-9 col-lg-9">
+		<img src="/assets/pool_09.jpg" class="img-thumbnail">
+	</div>
+	
+	<div class="col-xs-12 col-sm-12 col-md-9 col-lg-9 ">
+		<p>其實，這麼多的布置，<br>
+			對於陸龜來說好像都差不多。<br>
+			所以如果怕麻煩，<br>
+			或是覺得應該要從簡的話，<br>
+			還是簡單的整理箱，<br>
+			加上磁磚反鋪，<br>
+			應該還是養龜人的最佳解吧！ :p
+	</p>
+	</div>
+	<div class="col-xs-12 col-sm-12 col-md-9 col-lg-9">
+		<img src="/assets/pool_08.jpg" class="img-thumbnail">
+	</div>
+	
+	<div class="col-xs-12 col-sm-12 col-md-9 col-lg-9">
+		<p>最後赴上一張點點的家，全景照！</p>
+	</div>
+	<div class="col-xs-12 col-sm-12 col-md-9 col-lg-9">
+		<img src="/assets/pool_07.jpg" class="img-thumbnail">
+	</div>
+</div>
+
+<div>
+	<%= render 'comment/form' %>
+</div>
+	<% Comment.find(:all, :conditions => { :turtle_id => params[:turtle_id]}).each do |comment| %>
+<div class="row row_respond">
+<div class="respond col-xs-8 col-sm-8 col-md-6 col-lg-6">
+	<div class="name">
+	<%= comment.name %><br>
+	</div>
+	<%= comment.description %>
+	<div class="time">
+	<%= comment.created_at.strftime("%F %r") %>
+	</div>
+</div>
+</div>
+
+	<% end %>
+<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 up"><a href="/pool_01?turtle_id=4">上一篇</a></div><div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 down"><a href="/show_01?turtle_id=6">下一篇</a></div>

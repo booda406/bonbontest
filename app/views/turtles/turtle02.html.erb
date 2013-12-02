@@ -1,0 +1,54 @@
+<div class="description col-xs-12 col-sm-12 col-md-9 col-lg-9">
+		<h2>龜龜品種：豹龜
+		</h2>
+		<h2>龜名：阿豹
+		</h2>
+		<h2>龜重：117 g
+		</h2>
+		<h2>龜長：腹甲最短距離 7.5 cm</h2><br>
+</div>
+<div class="photo col-12 clearfix">
+		<div class="col-xs-12 col-sm-12 col-md-9 col-lg-9">
+			<img src="/assets/leopard_04.jpg" class="img-thumbnail">
+		</div>
+		<div class="col-xs-12 col-sm-12 col-md-9 col-lg-9">
+			<p>第一次養豹龜，因為品種和背上花紋的關係，就取名為「豹哥」。雖然感覺很沒什麼創意，不過我覺得這倒是很適合他的，因為他剛回來的時候比我們家另外一隻蘇卡達還要大隻，而且非常的霸道XD</p>
+		</div>
+		<div class="col-xs-12 col-sm-12 col-md-9 col-lg-9">
+			<img src="/assets/leopard_01.jpg" class="img-thumbnail">
+		</div>
+		<div class="col-xs-12 col-sm-12 col-md-9 col-lg-9">
+			<p>不過從某天起發現，豹哥越來越沒力了。不太吃東西，而且幾乎整天都在睡覺，上網查了一些大大們的分享，看來是要立即送醫的。</p>
+		</div>
+		<div class="col-xs-12 col-sm-12 col-md-9 col-lg-9">
+			<img src="/assets/leopard_03.jpg" class="img-thumbnail">
+		</div>
+		<div class="col-xs-12 col-sm-12 col-md-9 col-lg-9">
+			<p>在治療的過程中，豹哥有慢慢的好轉，開始慢慢的會稍微進食。像是他最愛吃的地瓜葉，他會毫不客氣的享用。</p>
+		</div>
+		<div class="col-xs-12 col-sm-12 col-md-9 col-lg-9">
+			<img src="/assets/leopard_02.jpg" class="img-thumbnail">
+		</div>
+		<div class="col-xs-12 col-sm-12 col-md-9 col-lg-9 ">
+			<p>療程結束之後，我以為一切都會回復平靜，豹哥應該會好起來。但因為最近天氣溫度極速下降，我對於溫度的掌控不是做的很好，結果豹哥的病情復發了。再帶去看醫生之後結果不是很樂觀，最後還是無法抵抗病魔，就這樣走了。10/23的時候離開了我們，雖然相處只有短短的幾個月，但我真的從豹哥身上學到很多養龜的知識還有經驗，謝謝他，希望他一路好走。有空我會再把醫治烏龜的經驗分享出來，希望大家都可以避免這種不幸的事情發生。</p>
+		</div>	
+</div>
+	<div>
+	<%= render 'comment/form' %>
+</div>
+	<% Comment.find(:all, :conditions => { :turtle_id => params[:turtle_id]}).each do |comment| %>
+<div class="row row_respond">
+<div class="respond col-xs-8 col-sm-8 col-md-6 col-lg-6">
+	<div class="name">
+	<%= comment.name %><br>
+	</div>
+	<%= comment.description %>
+	<div class="time">
+	<%= comment.created_at.strftime("%F %r") %>
+	</div>
+</div>
+</div>
+
+	<% end %>
+
+<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 up"><a href="/sulcata?turtle_id=1">上一篇</a></div><div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 down"><a href="/reddot?turtle_id=3">下一篇</a></div>

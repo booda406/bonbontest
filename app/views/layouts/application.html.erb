@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>龜龜日記</title>
+<meta http-equiv="Content-Type" content="text/html, charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<%= stylesheet_link_tag "application", :media => "all" %>
+<%= javascript_include_tag "application" %>
+<!-- , "data-turbolinks-track" => true -->
+<%= csrf_meta_tags %>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-45016329-1', 'loveturtle.herokuapp.com');
+  ga('send', 'pageview');
+</script>
+</head>
+<body>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/zh_TW/all.js#xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+<div class="wrapper">
+	
+		<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+  		<!-- Brand and toggle get grouped for better mobile display -->
+ 		<div class="navbar-header">
+   		<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+	      <span class="sr-only">Toggle navigation</span>
+	      <span class="icon-bar"></span>
+	      <span class="icon-bar"></span>
+	      <span class="icon-bar"></span>
+	    </button>
+   		 <!-- <a class="navbar-brand" href="/">龜龜日記</a> -->
+  		</div>
+  <!-- Collect the nav links, forms, and other content for toggling -->
+  		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+		    <ul class="nav navbar-nav">
+		      <li><a href="/">龜龜日記</a></li>
+		      <li><a href="/share">寫我的龜龜日記</a></li>
+		      <li><a href="/about">關於龜龜日記</a></li>
+<!-- 		      <% if user_signed_in? %>
+		      <li><%=link_to "登出", destroy_user_session_path%></li>
+		      <% else %>
+		      <li><%=link_to "登入", new_user_session_path%></li>
+		      <% end %> -->
+		    </ul>
+		</div><!-- /.navbar-collapse -->
+		</nav>
+		<div class="banner">
+		<div class="fb-like social" data-href="https://loveturtle.herokuapp.com/" data-width="100px" data-height="20px" data-colorscheme="light" data-layout="button_count" data-action="like" data-show-faces="true" data-send="false"></div>
+	</div><!-- banner -->
+			<div class="space_holder">
+
+<%= yield %>
+			</div><!-- space_holder -->
+			<div class="foot">
+				<div class="user_box">
+				<div class="user">
+					<a href="/about"><img src="/assets/face.jpg" class="face"></a>
+				<div class="user_info">
+					<h2>Robert</h2>
+					<p>icelorc@gmail.com</p>
+					<p>台北 Taipei</p>
+					<p><a href="/sulcata">＃蘇卡達</a> <a href="/leopard">＃豹龜</a> <a href="/reddot">＃櫻桃紅腿</a></p>
+				</div><!-- user_info -->
+				</div><!-- user -->
+				</div><!-- user_box -->
+			</div><!-- footer -->
+</div><!-- wrapper -->
+
+</body>
+</html>

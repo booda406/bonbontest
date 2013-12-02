@@ -1,0 +1,8 @@
+<%= @article.title %><br/>
+<%= @article.category.name %><br/>
+<%= image_tag @article.photo %><br/>
+<%= raw(@article.content) %><br/>
+<%= @article.tag_list %><br/>
+
+<%= link_to "編輯", edit_article_path %>
+<%= link_to "返回", articles_path %>
