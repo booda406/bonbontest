@@ -548,7 +548,7 @@ p{
 
 /*new.html.erb form*/
 
-.register_row{
+form.register_row{
 	height:500px
 }
 .register_title{
