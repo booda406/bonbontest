@@ -6,7 +6,7 @@
   <%= f.error_notification %>
   <div>
     <h2 class="register_title">註冊</h2>
-    <div class="input_box"><%= f.input :name, :required => true, :autofocus => true, :label => "姓名" %></div>
+    <div class="input_box"><%= f.input :name, :required => true, :autofocus => true, :label => "姓名", input_html: { :style => "height:35px;" } %></div>
     <div class="input_box"><%= f.input :email, :required => true %></div>
     <div class="input_box"><%= f.input :sex, :required => true, :label => "性別", :prompt => "choose your sex", :collection => ["男","女"] %></div>
     <div class="input_box"><%= f.input :birthday, :required => true, :label => "生日" %></div>
