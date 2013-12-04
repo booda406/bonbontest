@@ -555,9 +555,18 @@ form.register_row{
 	font-size: 25px;
 	margin-bottom: 20px;
 }
-.input_box{
+/* input in the input_box */
+.input_box input{
 	margin-bottom: 20px;
+    color: black;
+    height: 50px;
+    font-weight: bold;
+    font-size: 24px;
+    padding: 10px;
+    border: 2px solid #999;
+    border-radius:2px;
 }
+
 .input_box label{
 	margin-right: 10px;
 }
