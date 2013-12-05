@@ -1,6 +1,6 @@
 Bonbontest::Application.routes.draw do
   mount Ckeditor::Engine => '/ckeditor'
-  
+
   devise_for :users, :controller => { 
     :omniauth_callbacks => 'users/omniauth_callbacks' 
   }
