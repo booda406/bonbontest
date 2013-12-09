@@ -57,6 +57,9 @@ gem 'bootstrap-tagsinput-rails'
 #login
 gem 'devise'
 
+#Don't store in cookies cuz 4kb limit
+gem 'activerecord-session_store'
+
 #select date use calender
 gem 'less-rails'
 gem 'twitter-bootstrap-rails', :git => 'git://github.com/booda406/twitter-bootstrap-rails.git'
