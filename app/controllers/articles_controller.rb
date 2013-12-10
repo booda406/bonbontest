@@ -26,6 +26,7 @@ before_action :authenticate_user!
   # POST /articles.json
   def create
     @article = Article.new(article_params)
+    @article.user_id = current_user.id
     @article.tag_list = params[:article][:tag_list]
 
     respond_to do |format|

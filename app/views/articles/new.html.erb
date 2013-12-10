@@ -10,8 +10,9 @@
       </ul>
     </div>
   <% end %>
-
+  <div class="input_box">
   <%= f.input :title, :label => "文章標題" %>
+</div>
   <%= f.input :category_id, :label => "種類", :collection => Category.all %>
   <%= f.input :photo, :label => "封面照片" %>
   <%= f.input :content, :as => :ckeditor, :input_html => { :ckeditor => { :height => 600, :width => 600 } }, :label => false %>

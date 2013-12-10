@@ -588,3 +588,17 @@ p{
 .test_input{
 	height: 200px;
 }
+/* pin image CSS */
+.pin_image{
+	margin-bottom: 10px;
+	height: 100%;
+	position: relative;
+	width: 100%;
+	overflow: hidden;	
+}
+.pin_box{
+	height: 100%;
+	border:1px solid rgba(10, 10 ,10, 0.2);
+	min-height:100%;
+	box-shadow:1px 1px 6px rgba(20%,20%,40%,0.5);
+}
