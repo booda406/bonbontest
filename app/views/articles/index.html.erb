@@ -1,3 +1,15 @@
+<div class="row row_space">
 <% @articles.each do |f| %>
-	<%= link_to f.title, article_path(f) %>
+<div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 pin_space">
+	<a href="<%=article_path(f)%>"><div class="board_border">
+		<%= image_tag f.photo, :class => "img-thumbnail img_padding" %>
+	<h2 class="text-center"><%=link_to f.title, article_path(f)%></h2>
+		<ol>
+		<li>種類：<%=f.category.name%></li>
+		<li>時間：<%=f.updated_at.strftime("%F")%></li>
+		<li>TAG：<%=f.tag_list%></li>
+		</ol>
+	</div></a>
+</div>
 <% end %>
+</div>
