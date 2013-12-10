@@ -22,17 +22,21 @@
 <div class="row">
     <div class="col-xs-12 col-sm-4 col-md-4 col-lg-3 adjust-left">
 	    <h4>姓名：</h4>
-        <%= f.input_field :name, :required => true, :label => "姓名：" , :class => "form-control" , :placeholder => "如何稱呼您呢？"%></div><br>
+        <div class="input_box">
+        <%= f.input_field :name, :required => true, :label => "姓名：", :placeholder => "如何稱呼您呢？"%></div><br>
+    </div>
 </div><br>
 <div class="row">
     <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 adjust-left">
     <h4>Email：</h4>
-    <%= f.input_field :email, :required => true, :label => "電子信箱：" , :class => "form-control"  , :placeholder => "留下您的email有任何龜龜的更新系統就會自動通知您喔～"%></div><br>
+    <div class="input_box">
+    <%= f.input_field :email, :required => true, :label => "Email：", :class => "form-control" , :placeholder => "留下您的email有任何龜龜的更新系統就會自動通知您喔～"%></div><br>
+</div>
 </div><br>
 <div class="row">
     <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 adjust-left">
     <h4>想對我們說的話：</h4>
-    <%= f.text_area :content, :required => true, :label => "想對我們說的話：" , :class => "form-control" , :style =>"overflow:visible" , :placeholder=> " 任何建議或想對我們說的話..."%></div>
+    <%= f.text_area :content, :required => true, :label => "想對我們說的話：" , :class => "form-control" , :style =>"overflow:visible;height:100px" , :placeholder=> " 任何建議或想對我們說的話..."%></div>
 </div><br>
 <div class="row">
     <div class="col-xs-12 col-sm-12 col-md-7 col-lg-7 clearfix pull-right adjust-right">

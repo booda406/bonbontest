@@ -9,9 +9,9 @@
     <%= f.input :password, :label => "密碼", :required => false %>
     </div>
     <div class="remember_me">
-    <%= f.input :remember_me, :label => "記住我", :as => :boolean if devise_mapping.rememberable? %>
+    <%= f.input :remember_me, :label => false, :inline_label => "記住我", :as => :boolean if devise_mapping.rememberable? %>
     </div>
-    <%= f.button :submit, "登入", :class => "btn btn-primary", :style => { :float => "right" } %>
+    <%= f.button :submit, "登入", :class => "btn btn-primary", :style => "margin-left:50px" %>
   	
   	
   </div>
@@ -19,3 +19,4 @@
   <%= render "users/shared/links" %>
   </div>
 <% end %>
+</div>
