@@ -6,6 +6,7 @@ before_action :authenticate_user!
   # GET /articles.json
   def index
     @articles = Article.find(:all, :conditions => { :user_id => current_user.id })
+    # @articles = Article.all
   end
 
   # GET /articles/1
