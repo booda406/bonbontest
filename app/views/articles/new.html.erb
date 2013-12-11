@@ -12,10 +12,17 @@
   <% end %>
   <div class="input_box">
   <%= f.input :title, :label => "文章標題" %>
-</div>
+  </div>
   <%= f.input :category_id, :label => "種類", :collection => Category.all %>
+  
+  <div class="photo_update">
   <%= f.input :photo, :label => "封面照片" %>
-  <%= f.input :content, :as => :ckeditor, :input_html => { :ckeditor => { :height => 600, :width => 600 } }, :label => false %>
+  </div>
+
+  <div class="ckeditor_class">
+    <h4>文章內容：</h4>
+  <%= f.input :content, :as => :ckeditor, :input_html => { :ckeditor => { :height => 800, :width => "100%" } }, :label => false %>
+  </div>
   <%= f.input :tag_list, :input_html => { :data => { :role => "tagsinput" } }, :label => "標籤" %>
   <%= f.input :status, :collection => ["草稿","發表"], :prompt => "選擇狀態", :label => "是否發表" %>
 
