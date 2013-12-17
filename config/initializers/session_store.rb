@@ -4,4 +4,4 @@
 # Bonbontest::Application.config.session_store :cookie_store, key: '_bonbontest_session'
 
 #store in sessions table won't have limit
-Bonbontest::Application.config.session_store :active_record_store
+Bonbontest::Application.config.session_store :active_record_store, key: '_bonbontest_session'
