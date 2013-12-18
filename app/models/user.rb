@@ -16,7 +16,7 @@ class User < ActiveRecord::Base
 	                         email:auth.info.email,
 	                         password:Devise.friendly_token[0,20],
 	                         sex:auth.extra.raw_info.gender,
-	                         birthday:Date.strptime(auth.extra.raw_info.birthday,'%m/%d/%Y')
+	                         birthday:auth.extra.raw_info.birthday
 	                         )
 	  end
 	  user
