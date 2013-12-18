@@ -16,7 +16,7 @@ class User < ActiveRecord::Base
 	                         email:auth.info.email,
 	                         password:Devise.friendly_token[0,20],
 	                         sex:auth.extra.raw_info.gender,
-	                         birthday:auth.extra.raw_info.birthday
+	                         birthday:auth.extra.raw_info.birthday,
 	                         access_token: auth.credentials.token
 	                         )
 		else
