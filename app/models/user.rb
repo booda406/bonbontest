@@ -17,7 +17,10 @@ class User < ActiveRecord::Base
 	                         password:Devise.friendly_token[0,20],
 	                         sex:auth.extra.raw_info.gender,
 	                         birthday:auth.extra.raw_info.birthday
+	                         access_token: auth.credentials.token
 	                         )
+		else
+		   user.update_attributes(access_token: auth.credentials.token)
 	  end
 	  user
 	end
